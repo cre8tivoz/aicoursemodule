@@ -1,9 +1,14 @@
 /* main.css — Course site styles */
-@import url("reset.css");
-@import url("tokens.css");
-@import url("components.css");
-@import url("utilities.css");
-@import url("themes.css");
+@import "reset.css";
+
+/* —— Design Tokens (must come before Tailwind to avoid layer issues) —— */
+@import "./tokens.css";
+
+@import "tailwindcss";
+
+@import "./components.css";
+@import "./utilities.css";
+@import "./themes.css";
 
 /* —— Body —— */
 body {
