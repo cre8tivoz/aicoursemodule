@@ -16,10 +16,17 @@ export async function getStaticPaths() {
 const { loader } = Astro.props;
 const rawModule = await loader();
 const rawContent = typeof rawModule === "string" ? rawModule : (rawModule as any).default ?? String(rawModule);
-const contentHtml = marked.parse(rawContent) as string;
+const stripped = rawContent
+  .replace(/^---\n[\s\S]*?\n---\n?/, "")
+  .replace(/^\s*#\s+.+\n/, "");
+const contentHtml = marked.parse(stripped) as string;
+
+// Extract title from frontmatter
+const titleMatch = rawContent.match(/^title:\s*["']?(.+?)["']?\s*$/m);
+const pageTitle = titleMatch ? titleMatch[1] : "Assessment";
 ---
 
-<Base title="Assessment">
+<Base title={pageTitle}>
   <article class="assessment-sheet">
     <div set:html={contentHtml} />
   </article>

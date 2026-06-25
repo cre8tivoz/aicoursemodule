@@ -27,6 +27,7 @@ export async function getStaticPaths() {
         prev,
         next,
         moduleTitle: mod?.data.title ?? "",
+        moduleLessonsCount: sorted.filter((l) => l.data.module === lesson.data.module).length,
         totalLessons: sorted.length,
         currentIndex: index,
       },
@@ -34,7 +35,7 @@ export async function getStaticPaths() {
   });
 }
 
-const { lesson, prev, next, moduleTitle, totalLessons, currentIndex } = Astro.props;
+const { lesson, prev, next, moduleTitle, moduleLessonsCount, totalLessons, currentIndex } = Astro.props;
 const progressPercent = Math.round(((currentIndex + 1) / totalLessons) * 100);
 
 // Import markdown content directly and render with marked
@@ -46,7 +47,10 @@ if (!mod) {
 }
 const rawModule = await mod();
 const rawContent = typeof rawModule === "string" ? rawModule : (rawModule as any).default ?? String(rawModule);
-const contentHtml = marked.parse(rawContent) as string;
+const stripped = rawContent
+  .replace(/^---\n[\s\S]*?\n---\n?/, "")
+  .replace(/^\s*#\s+.+\n/, "");
+const contentHtml = marked.parse(stripped) as string;
 ---
 
 <Base title={lesson.data.title + " — Module " + lesson.data.module}>
@@ -68,7 +72,7 @@ const contentHtml = marked.parse(rawContent) as string;
 
   <article class="lesson-sheet">
     <header>
-      <p class="type-label" style="color: var(--color-accent);">Lesson {lesson.data.lesson}</p>
+      <p class="type-label" style="color: var(--color-accent);">Lesson {lesson.data.lesson} of {moduleLessonsCount} in Module {lesson.data.module}</p>
       <h1>{lesson.data.title}</h1>
     </header>
     <div set:html={contentHtml} />

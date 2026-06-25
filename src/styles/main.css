@@ -101,6 +101,34 @@ body {
   color: var(--color-text);
 }
 
+.assessment-sheet blockquote p {
+  margin-bottom: 0;
+}
+
+.assessment-sheet ul,
+.assessment-sheet ol {
+  padding-left: var(--space-lg);
+  margin: 0 0 var(--space-md);
+}
+
+.assessment-sheet li {
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: var(--leading-body);
+  margin-bottom: var(--space-sm);
+}
+
+.assessment-sheet li:last-child {
+  margin-bottom: 0;
+}
+
+.assessment-sheet p {
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: var(--leading-body);
+  margin: 0 0 var(--space-md);
+}
+
 .lesson-sheet h2,
 .assessment-sheet h2 {
   color: var(--color-text);
