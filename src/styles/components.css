@@ -193,30 +193,36 @@ html {
 
 .home-desk__hero-row {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: var(--space-xl);
+  justify-content: flex-end;
 }
 
 .home-desk__hero-logo {
   border-radius: var(--radius-lg);
   object-fit: cover;
   flex-shrink: 0;
-  width: 180px;
-  height: 180px;
+  width: 480px;
+  height: 480px;
 }
 
 .home-desk__hero-text {
   min-width: 0;
+  flex: 1;
 }
 
 .home-desk__image {
   border-radius: var(--radius);
   object-fit: cover;
   flex-shrink: 0;
+  width: 480px;
+  height: auto;
 }
 
 .syllabus-module__text {
   min-width: 0;
+  flex: 1;
 }
 
 .home-desk__title {
@@ -474,11 +480,11 @@ html {
 
 .syllabus-module__inner {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: var(--space-md);
   max-width: var(--measure-wide);
   min-width: 0;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .syllabus-module__eyebrow {
