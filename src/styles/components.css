@@ -193,16 +193,16 @@ html {
 
 .home-desk__hero-row {
   display: flex;
-  align-items: flex-start;
-  gap: var(--space-lg);
+  align-items: center;
+  gap: var(--space-xl);
 }
 
 .home-desk__hero-logo {
   border-radius: var(--radius-lg);
   object-fit: cover;
   flex-shrink: 0;
-  width: 80px;
-  height: 80px;
+  width: 180px;
+  height: 180px;
 }
 
 .home-desk__hero-text {
