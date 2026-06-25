@@ -1,173 +1,121 @@
 ---
-import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
-import config from "@/config/config.json";
-import theme from "@/config/theme.json";
-import { plainify } from "@/lib/utils/textConverter";
-import Footer from "@/partials/Footer.astro";
-import Header from "@/partials/Header.astro";
-import "@/styles/main.css";
-import {
-  GoogleTagmanager,
-  GoogleTagmanagerNoscript,
-} from "@digi4care/astro-google-tagmanager";
-import { Font } from "astro:assets";
-import { ClientRouter } from "astro:transitions";
-import Announcement from "./helpers/Announcement";
-import SearchModal from "./helpers/SearchModal";
-
-// font families - extract font names for Font component (filter out type keys)
-const fontEntries = Object.entries(theme.fonts.font_family).filter(
-  ([key]) => !key.includes("_type"),
-);
-
-// types for frontmatters
-export interface Props {
+interface Props {
   title?: string;
-  meta_title?: string;
   description?: string;
-  image?: string;
-  noindex?: boolean;
-  canonical?: string;
+  ogImage?: string;
 }
 
-// destructure frontmatter
-const { title, meta_title, description, image, noindex, canonical } =
-  Astro.props;
+const {
+  title = "AI Essentials for Qualifiers",
+  description = "A hands-on course in static-site deployment for AI-fluent graduates.",
+  ogImage = "/images/og-image.png",
+} = Astro.props;
+
+const site = {
+  favicon: "/favicon.svg",
+};
+const settings = {
+  default_theme: "light",
+};
+const params = {
+  course_title: "AI Essentials",
+  course_subtitle: "Static HTML Deployment for AI-Flu Graduates",
+  course_level: "AQF 5 — Diploma",
+};
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme={settings.default_theme ?? "light"}>
   <head>
-    <!-- google tag manager -->
-    {
-      config.google_tag_manager.enable && (
-        <GoogleTagmanager id={config.google_tag_manager.gtm_id} />
-      )
-    }
-    <!-- favicon -->
-    <link rel="shortcut icon" href={config.site.favicon} />
-    <!-- theme meta -->
-    <meta name="theme-name" content="astroplate" />
-    <meta name="msapplication-TileColor" content="#000000" />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="#fff"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#000"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <!-- google font css - Astro 6 built-in Font API -->
-    {
-      fontEntries.map(([key]) => {
-        const cssVar = `--font-${key}` as any;
-        return <Font cssVariable={cssVar} preload />;
-      })
-    }
-
-    <!-- responsive meta -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=5"
-    />
-
-    <!-- title -->
-    <title>
-      {plainify(meta_title ? meta_title : title ? title : config.site.title)}
-    </title>
-
-    <!-- canonical url -->
-    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
-
-    <!-- noindex robots -->
-    {noindex && <meta name="robots" content="noindex,nofollow" />}
-
-    <!-- meta-description -->
-    <meta
-      name="description"
-      content={plainify(
-        description ? description : config.metadata.meta_description,
-      )}
-    />
-
-    <ClientRouter />
-
-    <!-- author from config.json -->
-    <meta name="author" content={config.metadata.meta_author} />
-
-    <!-- og-title -->
-    <meta
-      property="og:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title,
-      )}
-    />
-
-    <!-- og-description -->
-    <meta
-      property="og:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description,
-      )}
-    />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
 
-    <!-- twitter-title -->
-    <meta
-      name="twitter:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title,
-      )}
+    <link rel="icon" type="image/svg+xml" href={site.favicon} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
     />
-
-    <!-- twitter-description -->
-    <meta
-      name="twitter:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description,
-      )}
-    />
-
-    <!-- og-image -->
-    <meta
-      property="og:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
-
-    <!-- twitter-image -->
-    <meta
-      name="twitter:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
-    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
   </head>
-  <body class="flex flex-col min-h-screen">
-    {/* google tag manager noscript */}
-    {
-      config.google_tag_manager.enable && (
-        <GoogleTagmanagerNoscript id={config.google_tag_manager.gtm_id} />
-      )
-    }
-    <Announcement client:only="react" />
-    <Header />
-    <SearchModal client:only="react" />
-    <main class="grow" id="main-content">
-      <slot />
-    </main>
-    <Footer />
-    <TwSizeIndicator />
+  <body>
+    <div class="site-frame">
+      <!-- Skip links -->
+      <a class="skip-link" href="#main">Skip to main content</a>
+      <a class="skip-link skip-link--syllabus" href="#course-map">Skip to course map</a>
+
+      <!-- Header -->
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="/" class="site-logo" aria-label={params.course_title + " home"}>
+            <span class="site-logo__mark" aria-hidden="true"></span>
+            <span>{params.course_title}</span>
+          </a>
+          <nav aria-label="Primary" class="site-nav">
+            <ul class="site-nav__list">
+              <li><a href="/" class="site-nav__pill" aria-current={Astro.url.pathname === "/" ? "page" : undefined}>Home</a></li>
+              <li><a href="/curriculum/course-outline" class="site-nav__pill" aria-current={Astro.url.pathname.startsWith("/curriculum") ? "page" : undefined}>Curriculum</a></li>
+              <li><a href="/lessons/module-01/01" class="site-nav__pill" aria-current={Astro.url.pathname.startsWith("/lessons") ? "page" : undefined}>Lessons</a></li>
+              <li><a href="/assessments/module-01-quiz" class="site-nav__pill" aria-current={Astro.url.pathname.startsWith("/assessments") ? "page" : undefined}>Assessments</a></li>
+            </ul>
+          </nav>
+
+          <!-- Theme Switcher -->
+          <fieldset class="theme-switcher">
+            <legend class="theme-switcher__legend visually-hidden">Theme</legend>
+            <button type="button" class="theme-btn" data-theme-value="light" aria-pressed="false">Light</button>
+            <button type="button" class="theme-btn" data-theme-value="mono" aria-pressed="false">Mono</button>
+          </fieldset>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main id="main" class="site-main">
+        <slot />
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <p class="site-footer__tagline">{params.course_title}</p>
+          <p class="site-footer__note">
+            {params.course_subtitle} &middot; {params.course_level}
+          </p>
+          <nav aria-label="Footer">
+            <ul class="site-footer__nav">
+              <li><a href="/curriculum/course-outline">Course Outline</a></li>
+              <li><a href="/reference/aqf-level-5-descriptor">AQF Descriptor</a></li>
+              <li><a href="/assessments/capstone">Capstone</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Keyboard help dialog (hidden by default) -->
+    <div id="keyboard-help" class="keyboard-help" hidden aria-modal="true" role="dialog" aria-labelledby="keyboard-help-title">
+      <div class="keyboard-help__panel">
+        <button class="keyboard-help__close" aria-label="Close" data-action="close-keyboard-help">&times;</button>
+        <h2 class="keyboard-help__title" id="keyboard-help-title">Keyboard shortcuts</h2>
+        <p class="keyboard-help__intro">Navigate the course without a mouse.</p>
+        <dl class="keyboard-help__list">
+          <div class="keyboard-help__row"><dt>N</dt><dd>Next page</dd></div>
+          <div class="keyboard-help__row"><dt>P</dt><dd>Previous page</dd></div>
+          <div class="keyboard-help__row"><dt>T</dt><dd>Theme switcher</dd></div>
+          <div class="keyboard-help__row"><dt>?</dt><dd>Show this help</dd></div>
+          <div class="keyboard-help__row"><dt>Esc</dt><dd>Close dialogs</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <script src="/js/app.js" is:inline></script>
   </body>
 </html>

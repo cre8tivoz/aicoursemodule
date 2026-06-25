@@ -1,0 +1,88 @@
+/* tokens.css — Teachable-inspired Design Tokens */
+/* Light background, near-black text, emerald accent */
+
+:root {
+  /* Page background */
+  --color-shell:         #FFFFFF;    /* White */
+  --color-shell-soft:    #F8FAFC;    /* Light gray */
+  --color-shell-border:  #E5E7EB;    /* Border */
+
+  /* Surface cards */
+  --color-surface:       #FFFFFF;    /* White */
+  --color-surface-deep:  #F3F4F6;    /* Card bg */
+
+  /* Text */
+  --color-text:            #111827;   /* Near-black (body) */
+  --color-text-muted:      #4B5563;   /* Medium gray */
+  --color-text-dim:        #9CA3AF;   /* Muted */
+
+  /* Accents */
+  --color-accent:          #10B981;   /* Emerald — links, progress, CTAs */
+  --color-accent-soft:     #D1FAE5;   /* Light emerald bg */
+
+  /* Borders */
+  --color-border:         #E5E7EB;
+  --color-border-light:   #F3F4F6;
+
+  /* Focus */
+  --color-focus-ring: #10B981;
+
+  /* —— Typography —— */
+  --font-ui:      Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-body:    Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  /* Type scale */
+  --type-micro:     0.625rem;    /* 10px */
+  --type-label:     0.6875rem;   /* 11px */
+  --type-caption:   0.8125rem;   /* 13px */
+  --type-secondary: 0.875rem;    /* 14px */
+  --type-body:      1rem;        /* 16px */
+  --type-lede:      1.125rem;    /* 18px */
+  --type-subhead:   1.125rem;    /* 18px */
+  --type-title:     1.25rem;     /* 20px */
+  --type-heading:   clamp(1.35rem, 3vw, 1.75rem);
+  --type-display:   clamp(1.85rem, 4.5vw, 2.5rem);
+  --type-display-home: clamp(2rem, 5vw, 2.75rem);
+
+  /* Line heights */
+  --leading-tight:   1.2;
+  --leading-snug:    1.4;
+  --leading-body:    1.7;
+  --leading-relaxed: 1.8;
+
+  /* Measures */
+  --measure-narrow: 38ch;
+  --measure-prose:  65ch;
+  --measure-wide:   52rem;
+  --content-max:    72rem;
+
+  /* —— Spacing —— */
+  --space-xs:  0.25rem;   /*  4px */
+  --space-sm:  0.5rem;    /*  8px */
+  --space-md:  1rem;      /* 16px */
+  --space-lg:  1.5rem;    /* 24px */
+  --space-xl:  2rem;      /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4rem;      /* 64px */
+
+  /* —— Radii —— */
+  --radius-sm:  0.25rem;  /*  4px */
+  --radius:     0.5rem;   /*  8px — cards, buttons */
+  --radius-lg:  0.75rem;  /* 12px — lesson sheet */
+  --radius-xl:  1rem;     /* 16px — home action pad */
+  --radius-pill: 9999px;  /* pills */
+
+  /* —— Shadows —— */
+  --shadow-sm:   0 1px 2px rgba(0,0,0,0.05);
+  --shadow:      0 1px 3px rgba(0,0,0,0.1);
+  --shadow-card: 0 4px 6px rgba(0,0,0,0.07);
+  --shadow-float: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* —— Theme: Mono —— */
+html[data-theme="mono"] {
+  --color-accent: #000000;
+  --color-accent-soft: #F0F0F0;
+  --color-focus-ring: #000000;
+}

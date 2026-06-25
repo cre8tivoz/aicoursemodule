@@ -1,0 +1,26 @@
+---
+import Base from "@/layouts/Base.astro";
+import { marked } from "marked";
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob("/src/content/reference/**/*.md", { query: "raw" });
+  return Object.entries(modules).map(([path, loader]) => {
+    const slug = path.split("/").pop()?.replace(".md", "") ?? "";
+    return {
+      params: { ref: slug },
+      props: { loader },
+    };
+  });
+}
+
+const { loader } = Astro.props;
+const rawModule = await loader();
+const rawContent = typeof rawModule === "string" ? rawModule : (rawModule as any).default ?? String(rawModule);
+const contentHtml = marked.parse(rawContent) as string;
+---
+
+<Base title="Reference">
+  <article class="lesson-sheet">
+    <div set:html={contentHtml} />
+  </article>
+</Base>

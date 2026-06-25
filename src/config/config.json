@@ -1,65 +1,48 @@
 {
   "site": {
-    "title": "Astroplate",
-    "base_url": "https://astroplate.netlify.app",
+    "title": "AI Essentials for Qualifiers",
+    "base_url": "https://course1-elearning.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
+    "favicon": "/favicon.svg",
+    "logo": "/images/logo.svg",
     "logo_width": "150",
     "logo_height": "30",
-    "logo_text": "Astroplate"
+    "logo_text": "AI Essentials"
   },
-
   "settings": {
-    "search": true,
+    "search": false,
     "sticky_header": true,
     "theme_switcher": true,
-    "default_theme": "system",
-    "pagination": 2,
+    "default_theme": "light",
     "summary_length": 200,
     "blog_folder": "blog"
   },
-
-  "announcement": {
-    "enable": true,
-    "content": "<span class='text-center block'>♥️ Loving Astroplate? <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>",
-    "expire_days": 7
-  },
-
   "params": {
-    "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "course_title": "AI Essentials for Qualifiers",
+    "course_subtitle": "Static-site deployment skills for the modern web",
+    "course_level": "AQF Level 5",
+    "copyright": "Witch Daddy Labs"
   },
-
   "navigation_button": {
-    "enable": true,
-    "label": "Github",
-    "link": "https://github.com/zeon-studio/astroplate"
-  },
-
-  "google_tag_manager": {
     "enable": false,
-    "gtm_id": "GTM-XXXXXX"
+    "label": "",
+    "link": ""
   },
-
+  "google_tag_manager": {
+    "enable": false
+  },
   "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
-    "settings": {}
+    "enable": false
   },
-
   "metadata": {
-    "meta_author": "zeon.studio",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "astro and tailwind boilerplate"
+    "meta_author": "Static HTML & AI",
+    "meta_description": "A hands-on course teaching static-site deployment for AI-fluent graduates"
   },
-
   "llms": {
-    "generate_llms_txt": true,
-    "generate_llms_full_txt": true,
-    "generate_individual_md": true,
+    "generate_llms_txt": false,
+    "generate_llms_full_txt": false,
+    "generate_individual_md": false,
     "include": [],
     "exclude": []
   }

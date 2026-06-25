@@ -1,22 +1,184 @@
-@import "tailwindcss";
-@plugin "@tailwindcss/forms";
-@plugin "@tailwindcss/typography";
-@plugin 'tailwind-bootstrap-grid';
-@custom-variant dark (&:where(.dark, .dark *));
+/* main.css — Course site styles */
+@import url("reset.css");
+@import url("tokens.css");
+@import url("components.css");
+@import url("utilities.css");
+@import url("themes.css");
 
-/* Auto-generated theme from "theme.json"*/
-@import "./generated-theme.css";
-
-@import "./safe.css";
-@import "./utilities.css";
-
-@layer base {
-  @import "./base.css";
+/* —— Body —— */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--type-body);
+  line-height: var(--leading-body);
+  color: var(--color-text);
+  background-color: var(--color-shell);
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-@layer components {
-  @import "./components.css";
-  @import "./navigation.css";
-  @import "./buttons.css";
-  @import "./search.css";
+/* —— Site Frame —— */
+.site-frame {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* —— Main Content —— */
+.site-main {
+  flex: 1;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  width: 100%;
+  padding: clamp(var(--space-lg), 4vw, var(--space-xl)) var(--space-lg) var(--space-3xl);
+  overflow-x: auto;
+}
+
+.site-main > * {
+  max-width: var(--content-max);
+}
+
+.site-main.site-main--home > .home-layout {
+  max-width: 100%;
+}
+
+.site-main > .lesson-sheet {
+  max-width: min(var(--content-max), 100%);
+}
+
+/* —— Prose —— */
+.site-main h1 {
+  font-family: var(--font-ui);
+  font-size: var(--type-display);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.03em;
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+  text-wrap: balance;
+}
+
+.site-main h2 {
+  font-family: var(--font-ui);
+  font-size: var(--type-heading);
+  line-height: var(--leading-snug);
+  letter-spacing: -0.02em;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+  text-wrap: balance;
+}
+
+.site-main h3 {
+  font-family: var(--font-ui);
+  font-size: var(--type-subhead);
+  line-height: var(--leading-snug);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.site-main p,
+.site-main li {
+  color: var(--color-text);
+}
+
+/* —— Prose on surface (lesson sheet, assessment sheet) —— */
+.lesson-sheet h1,
+.lesson-sheet h3,
+.assessment-sheet h1,
+.assessment-sheet h3,
+.lesson-sheet p,
+.lesson-sheet li,
+.assessment-sheet p,
+.assessment-sheet li {
+  color: var(--color-text);
+}
+
+.lesson-sheet h2,
+.assessment-sheet h2 {
+  color: var(--color-text);
+}
+
+.site-main li {
+  margin-bottom: var(--space-sm);
+}
+
+.site-main li:last-child {
+  margin-bottom: 0;
+}
+
+.site-main p {
+  margin: 0 0 var(--space-md);
+}
+
+.site-main a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+.site-main a:visited {
+  color: var(--color-accent);
+}
+
+.site-main a:hover {
+  color: var(--color-accent);
+  text-decoration-thickness: 0.12em;
+}
+
+.site-main a:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+/* CTA button override — beats @imported rules */
+.home-action a.home-action__cta,
+.home-action__cta {
+  color: #FFFFFF !important;
+}
+
+/* —— Tables —— */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-lg) 0;
+  font-size: var(--type-secondary);
+  line-height: var(--leading-snug);
+}
+
+thead th,
+tbody th {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  text-align: left;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 2px solid var(--color-border);
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+tbody td {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  vertical-align: top;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--color-border) 30%, var(--color-surface));
+}
+
+/* Narrow columns helper */
+table th:first-child,
+table td:first-child {
+  white-space: nowrap;
+  width: 1%;
+  padding-right: var(--space-lg);
 }

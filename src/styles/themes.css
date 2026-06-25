@@ -1,0 +1,14 @@
+/* themes.css — Visual theme variations */
+
+/* —— Mono (high contrast B/W) —— */
+html[data-theme="mono"] {
+  --color-shell: #FFFFFF;
+  --color-shell-soft: #F0F0F0;
+  --color-shell-border: #000000;
+  --color-text: #000000;
+  --color-text-muted: #444444;
+  --color-accent: #000000;
+  --color-accent-soft: #F0F0F0;
+  --color-border: #000000;
+  --color-focus-ring: #000000;
+}

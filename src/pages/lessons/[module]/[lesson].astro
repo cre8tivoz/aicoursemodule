@@ -1,0 +1,121 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { marked } from "marked";
+
+export async function getStaticPaths() {
+  const lessons = await getCollection("lessons");
+  const modules = await getCollection("modules");
+
+  const sorted = lessons.sort((a, b) => {
+    if (a.data.module !== b.data.module) return a.data.module.localeCompare(b.data.module);
+    return a.data.lesson.localeCompare(b.data.lesson);
+  });
+
+  return sorted.map((lesson, index) => {
+    const prev = index > 0 ? sorted[index - 1] : null;
+    const next = index < sorted.length - 1 ? sorted[index + 1] : null;
+    const mod = modules.find((m) => m.data.id === lesson.data.module);
+
+    return {
+      params: {
+        module: "module-" + lesson.data.module,
+        lesson: lesson.data.lesson,
+      },
+      props: {
+        lesson,
+        prev,
+        next,
+        moduleTitle: mod?.data.title ?? "",
+        totalLessons: sorted.length,
+        currentIndex: index,
+      },
+    };
+  });
+}
+
+const { lesson, prev, next, moduleTitle, totalLessons, currentIndex } = Astro.props;
+const progressPercent = Math.round(((currentIndex + 1) / totalLessons) * 100);
+
+// Import markdown content directly and render with marked
+const modules = import.meta.glob("/src/content/lessons/**/*.md", { query: "raw" });
+const lessonPath = `/src/content/lessons/module-${lesson.data.module}/${lesson.data.lesson}.md`;
+const mod = modules[lessonPath];
+if (!mod) {
+  throw new Error(`Lesson file not found: ${lessonPath}`);
+}
+const rawModule = await mod();
+const rawContent = typeof rawModule === "string" ? rawModule : (rawModule as any).default ?? String(rawModule);
+const contentHtml = marked.parse(rawContent) as string;
+---
+
+<Base title={lesson.data.title + " — Module " + lesson.data.module}>
+  <nav class="lesson-context" aria-label="Breadcrumb">
+    <ol class="lesson-context__list">
+      <li class="lesson-context__item">
+        <a class="lesson-context__link" href="/">Home</a>
+        <span aria-hidden="true">/</span>
+      </li>
+      <li class="lesson-context__item">
+        <span class="lesson-context__current">M{lesson.data.module}: {moduleTitle}</span>
+      </li>
+      <li class="lesson-context__item">
+        <span class="lesson-context__current" aria-current="page">{lesson.data.title}</span>
+      </li>
+    </ol>
+    {lesson.data.summary && <p class="lesson-context__meta">{lesson.data.summary}</p>}
+  </nav>
+
+  <article class="lesson-sheet">
+    <header>
+      <p class="type-label" style="color: var(--color-accent);">Lesson {lesson.data.lesson}</p>
+      <h1>{lesson.data.title}</h1>
+    </header>
+    <div set:html={contentHtml} />
+  </article>
+
+  <nav class="lesson-sequence-nav" aria-label="Lesson navigation">
+    <p class="lesson-sequence-nav__heading type-label">Lesson Navigation</p>
+    <div class="lesson-sequence-nav__grid">
+      {prev ? (
+        <a
+          class="lesson-sequence-nav__card lesson-sequence-nav__card--prev"
+          href={"/lessons/module-" + prev.data.module + "/" + prev.data.lesson}
+          data-action="prev"
+        >
+          <span class="lesson-sequence-nav__eyebrow type-label">Previous</span>
+          <span class="lesson-sequence-nav__title">{prev.data.title}</span>
+          <span class="lesson-sequence-nav__meta">M{prev.data.module} &middot; Lesson {prev.data.lesson}</span>
+        </a>
+      ) : (
+        <div class="lesson-sequence-nav__card lesson-sequence-nav__card--muted" aria-hidden="true">
+          <span class="lesson-sequence-nav__eyebrow type-label">Start</span>
+          <span class="lesson-sequence-nav__title">Course beginning</span>
+        </div>
+      )}
+      {next ? (
+        <a
+          class="lesson-sequence-nav__card lesson-sequence-nav__card--next"
+          href={"/lessons/module-" + next.data.module + "/" + next.data.lesson}
+          data-action="next"
+        >
+          <span class="lesson-sequence-nav__eyebrow type-label">Next</span>
+          <span class="lesson-sequence-nav__title">{next.data.title}</span>
+          <span class="lesson-sequence-nav__meta">M{next.data.module} &middot; Lesson {next.data.lesson}</span>
+        </a>
+      ) : (
+        <a
+          class="lesson-sequence-nav__card lesson-sequence-nav__card--next"
+          href="/assessments/capstone"
+          data-action="next"
+        >
+          <span class="lesson-sequence-nav__eyebrow type-label">Capstone</span>
+          <span class="lesson-sequence-nav__title">Final Assessment</span>
+        </a>
+      )}
+    </div>
+    <p class="lesson-sequence-nav__progress">
+      Lesson {currentIndex + 1} of {totalLessons} &middot; {progressPercent}% through
+    </p>
+  </nav>
+</Base>
