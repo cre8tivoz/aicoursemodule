@@ -188,15 +188,13 @@ html {
 }
 
 .home-desk {
-  max-width: var(--measure-narrow);
+  max-width: 1200px;
 }
 
 .home-desk__hero-row {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   gap: var(--space-xl);
-  justify-content: flex-end;
 }
 
 .home-desk__hero-logo {
@@ -449,7 +447,7 @@ html {
 
 .syllabus-module__toggle {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
   padding: var(--space-lg) var(--space-lg);
@@ -480,7 +478,7 @@ html {
 
 .syllabus-module__inner {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   gap: var(--space-md);
   max-width: var(--measure-wide);
   min-width: 0;
