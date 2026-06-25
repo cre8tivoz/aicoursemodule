@@ -191,12 +191,25 @@ html {
   max-width: var(--measure-narrow);
 }
 
-.home-desk__hero-logo {
-  margin-bottom: var(--space-lg);
-  border-radius: var(--radius-lg);
+.home-desk__hero-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
 }
 
-.syllabus-module__image {
+.home-desk__hero-logo {
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.home-desk__hero-text {
+  min-width: 0;
+}
+
+.home-desk__image {
   border-radius: var(--radius);
   object-fit: cover;
   flex-shrink: 0;
@@ -461,10 +474,11 @@ html {
 
 .syllabus-module__inner {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
+  flex-direction: row;
+  gap: var(--space-md);
   max-width: var(--measure-wide);
   min-width: 0;
+  align-items: flex-start;
 }
 
 .syllabus-module__eyebrow {

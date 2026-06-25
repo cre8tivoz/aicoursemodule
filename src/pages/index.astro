@@ -20,21 +20,25 @@ const courseDescription = `AQF Level 5 course covering static-site generation, d
   <div class="home-layout">
     <!-- Hero -->
     <section class="home-desk">
-      <img src="/images/logo.png" alt="" class="home-desk__hero-logo" width="120" height="120" />
-      <p class="type-label" style="color: var(--color-accent);">AQF Level 5</p>
-      <h1 class="home-desk__title">AI Essentials for Qualifiers</h1>
-      <p class="home-desk__lede">
-        {courseDescription}
-      </p>
-      <p class="home-desk__lede" style="margin-top: var(--space-md);">
-        This is a hands-on, progression-based course. Each module builds on the last.
-        Use N/P to navigate between pages, or browse the syllabus below.
-      </p>
-      {totalAssessments > 0 && (
-        <p style="margin-top: var(--space-md); color: var(--color-text-muted); font-size: var(--type-secondary);">
-          You have {totalAssessments} assessments across {sortedModules.length} modules.
-        </p>
-      )}
+      <div class="home-desk__hero-row">
+        <img src="/images/logo.png" alt="" class="home-desk__hero-logo" width="80" height="80" />
+        <div class="home-desk__hero-text">
+          <p class="type-label" style="color: var(--color-accent);">AQF Level 5</p>
+          <h1 class="home-desk__title">AI Essentials for Qualifiers</h1>
+          <p class="home-desk__lede">
+            {courseDescription}
+          </p>
+          <p class="home-desk__lede" style="margin-top: var(--space-md);">
+            This is a hands-on, progression-based course. Each module builds on the last.
+            Use N/P to navigate between pages, or browse the syllabus below.
+          </p>
+          {totalAssessments > 0 && (
+            <p style="margin-top: var(--space-md); color: var(--color-text-muted); font-size: var(--type-secondary);">
+              You have {totalAssessments} assessments across {sortedModules.length} modules.
+            </p>
+          )}
+        </div>
+      </div>
     </section>
 
     <!-- Course Map / Syllabus -->
