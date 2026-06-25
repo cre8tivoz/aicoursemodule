@@ -238,30 +238,13 @@ html {
   .home-desk__hero-text {
     text-align: center;
   }
-
-  .syllabus-module__inner {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .syllabus-module__image {
-    width: 100%;
-    height: auto;
-    max-height: 240px;
-  }
 }
 
-/* Desktop: hero 480px, modules 480px right-aligned */
+/* Desktop: hero 480px, modules image full width */
 @media (min-width: 769px) {
   .home-desk__hero-logo {
     width: 480px;
     height: 480px;
-  }
-
-  .syllabus-module__image {
-    width: 480px;
-    height: auto;
-    flex-shrink: 0;
   }
 }
 
@@ -520,11 +503,20 @@ html {
 
 .syllabus-module__inner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: var(--space-md);
   max-width: var(--measure-wide);
   min-width: 0;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.syllabus-module__image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .syllabus-module__eyebrow {
