@@ -223,6 +223,34 @@ html {
   flex: 1;
 }
 
+/* Mobile: stack hero vertically, reduce image size */
+@media (max-width: 768px) {
+  .home-desk__hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-desk__hero-logo {
+    width: min(300px, 80vw);
+    height: min(300px, 80vw);
+  }
+
+  .home-desk__hero-text {
+    text-align: center;
+  }
+
+  .syllabus-module__inner {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .syllabus-module__image {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+  }
+}
+
 .home-desk__title {
   margin: 0 0 var(--space-md);
   font-family: var(--font-ui);
