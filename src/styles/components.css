@@ -251,6 +251,20 @@ html {
   }
 }
 
+/* Desktop: hero 480px, modules 480px right-aligned */
+@media (min-width: 769px) {
+  .home-desk__hero-logo {
+    width: 480px;
+    height: 480px;
+  }
+
+  .syllabus-module__image {
+    width: 480px;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+
 .home-desk__title {
   margin: 0 0 var(--space-md);
   font-family: var(--font-ui);

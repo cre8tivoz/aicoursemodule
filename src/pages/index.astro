@@ -37,7 +37,7 @@ const courseDescription = `AQF Level 5 course covering static-site generation, d
             </p>
           )}
         </div>
-        <img src="/images/logo.png" alt="" class="home-desk__hero-logo" width="480" height="480" />
+        <img src="/images/logo.png" alt="" class="home-desk__hero-logo" />
       </div>
     </section>
 
@@ -85,7 +85,7 @@ const courseDescription = `AQF Level 5 course covering static-site generation, d
                   <h3 class="syllabus-module__title">{mod.data.title}</h3>
                   {mod.data.summary && <p class="syllabus-module__summary">{mod.data.summary}</p>}
                 </div>
-                {mod.data.image && <img src={mod.data.image} alt="" class="syllabus-module__image" width="480" />}
+                {mod.data.image && <img src={mod.data.image} alt="" class="syllabus-module__image" />}
               </div>
               <span class="syllabus-module__chevron" aria-hidden="true"></span>
             </summary>
