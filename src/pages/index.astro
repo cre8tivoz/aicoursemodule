@@ -20,6 +20,7 @@ const courseDescription = `AQF Level 5 course covering static-site generation, d
   <div class="home-layout">
     <!-- Hero -->
     <section class="home-desk">
+      <img src="/images/logo.png" alt="" class="home-desk__hero-logo" width="120" height="120" />
       <p class="type-label" style="color: var(--color-accent);">AQF Level 5</p>
       <h1 class="home-desk__title">AI Essentials for Qualifiers</h1>
       <p class="home-desk__lede">
@@ -75,9 +76,12 @@ const courseDescription = `AQF Level 5 course covering static-site generation, d
             <summary class="syllabus-module__toggle">
               <span class="syllabus-module__tint" aria-hidden="true"></span>
               <div class="syllabus-module__inner">
-                <p class="syllabus-module__eyebrow type-label">Module {mod.data.id}</p>
-                <h3 class="syllabus-module__title">{mod.data.title}</h3>
-                {mod.data.summary && <p class="syllabus-module__summary">{mod.data.summary}</p>}
+                {mod.data.image && <img src={mod.data.image} alt="" class="syllabus-module__image" width="48" height="48" />}
+                <div class="syllabus-module__text">
+                  <p class="syllabus-module__eyebrow type-label">Module {mod.data.id}</p>
+                  <h3 class="syllabus-module__title">{mod.data.title}</h3>
+                  {mod.data.summary && <p class="syllabus-module__summary">{mod.data.summary}</p>}
+                </div>
               </div>
               <span class="syllabus-module__chevron" aria-hidden="true"></span>
             </summary>

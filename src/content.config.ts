@@ -35,6 +35,7 @@ const modulesCollection = defineCollection({
     title: z.string(),
     summary: z.string().optional(),
     tint: z.string().default("style01"),
+    image: z.string().optional(),
   }),
 });
 

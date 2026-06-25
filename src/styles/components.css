@@ -191,6 +191,21 @@ html {
   max-width: var(--measure-narrow);
 }
 
+.home-desk__hero-logo {
+  margin-bottom: var(--space-lg);
+  border-radius: var(--radius-lg);
+}
+
+.syllabus-module__image {
+  border-radius: var(--radius);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.syllabus-module__text {
+  min-width: 0;
+}
+
 .home-desk__title {
   margin: 0 0 var(--space-md);
   font-family: var(--font-ui);
