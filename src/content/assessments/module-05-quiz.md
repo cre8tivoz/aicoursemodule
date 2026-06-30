@@ -2,7 +2,9 @@
 title: "Module 05 assessment"
 module: "05"
 type: checkin
-aqfOutcomeRefs: []
+aqfOutcomeRefs:
+  - "CO-01"
+  - "CO-03"
 ---
 
 # Module 05 — Assessment
