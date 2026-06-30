@@ -28,7 +28,7 @@ description: ""
 | **Practice** | Find one deliberate error in a provided snippet (missing closing tag). |
 | **Summary** | Literacy = faster debugging and better prompts. |
 
-**File:** [`lessons/module-05/lesson-01.md`](../lessons/module-05/lesson-01.md)
+**File:** [Module 05 Lesson 01](/lessons/module-05/01)
 
 ---
 
@@ -41,7 +41,7 @@ description: ""
 | **Practice** | Label five lines of markup as “semantic” or “generic” with one-line rationale each. |
 | **Summary** | Supports CO-03 and capstone accessibility expectations. |
 
-**File:** [`lessons/module-05/lesson-02.md`](../lessons/module-05/lesson-02.md)
+**File:** [Module 05 Lesson 02](/lessons/module-05/02)
 
 ---
 
@@ -54,7 +54,7 @@ description: ""
 | **Practice** | Rewrite headings for a short outline using correct levels. |
 | **Summary** | Directly ties to Lighthouse accessibility and readability. |
 
-**File:** [`lessons/module-05/lesson-03.md`](../lessons/module-05/lesson-03.md)
+**File:** [Module 05 Lesson 03](/lessons/module-05/03)
 
 ---
 
@@ -67,7 +67,7 @@ description: ""
 | **Practice** | Three-item skim list you will use on every AI stylesheet. |
 | **Summary** | Creative direction includes visual hierarchy, not only HTML. |
 
-**File:** [`lessons/module-05/lesson-04.md`](../lessons/module-05/lesson-04.md)
+**File:** [Module 05 Lesson 04](/lessons/module-05/04)
 
 ---
 
@@ -80,7 +80,7 @@ description: ""
 | **Practice** | Set a personal 30-minute trial goal (which section to open first). |
 | **Summary** | Reinforces CO-01 (investing in fundamentals) without mandatory hurdle. |
 
-**File:** [`lessons/module-05/lesson-05.md`](../lessons/module-05/lesson-05.md)
+**File:** [Module 05 Lesson 05](/lessons/module-05/05)
 
 ## Dependencies between lessons
 

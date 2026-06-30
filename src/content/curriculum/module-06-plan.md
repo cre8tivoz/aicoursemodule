@@ -28,7 +28,7 @@ description: ""
 | **Practice** | Complete the template for your own capstone topic (draft). |
 | **Summary** | The brief is the contract with yourself and the AI. |
 
-**File:** [`lessons/module-06/lesson-01.md`](../lessons/module-06/lesson-01.md)
+**File:** [Module 06 Lesson 01](/lessons/module-06/01)
 
 ---
 
@@ -41,7 +41,7 @@ description: ""
 | **Practice** | Rewrite a weak prompt into a strong one (provided weak prompt in lesson). |
 | **Summary** | CO-04: apply creative direction to tools. |
 
-**File:** [`lessons/module-06/lesson-02.md`](../lessons/module-06/lesson-02.md)
+**File:** [Module 06 Lesson 02](/lessons/module-06/02)
 
 ---
 
@@ -54,7 +54,7 @@ description: ""
 | **Practice** | Write your personal loop as a numbered checklist (min 5 steps). |
 | **Summary** | Professional tone: document what you asked and what you changed. |
 
-**File:** [`lessons/module-06/lesson-03.md`](../lessons/module-06/lesson-03.md)
+**File:** [Module 06 Lesson 03](/lessons/module-06/03)
 
 ---
 
@@ -62,12 +62,12 @@ description: ""
 
 | Phase | Content |
 | ----- | ------- |
-| **Concept** | Map brief → 1–3 pages → deploy (Netlify/Vercel/own server); Lighthouse accessibility ≥90%; **S/NS** criteria in [`assessments/capstone.md`](../assessments/capstone.md). |
+| **Concept** | Map brief → 1–3 pages → deploy (Netlify/Vercel/own server); Lighthouse accessibility ≥90%; **S/NS** criteria in [Capstone assessment](/assessments/capstone). |
 | **Example** | Submission pack: URL + optional repo + Lighthouse note. |
 | **Practice** | Self-audit table against capstone rows (draft **S** or **NS** with evidence). |
 | **Summary** | Completes CO-04/CO-05 integration; **not** a hurdle for other modules. |
 
-**File:** [`lessons/module-06/lesson-04.md`](../lessons/module-06/lesson-04.md)
+**File:** [Module 06 Lesson 04](/lessons/module-06/04)
 
 ## Dependencies between lessons
 

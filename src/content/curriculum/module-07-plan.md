@@ -26,15 +26,15 @@ description: ""
 | **Concept** | Capstone is summative, **not** a hurdle; 1–3 HTML pages; deploy; Lighthouse ≥ 90% on **deployed** URL; S/NS rows. |
 | **Example** | Stages: brief lock → files → structure → CSS → deploy → Lighthouse → evidence pack Parts A–D. |
 | **Practice** | Workbook checklists; evidence pack draft; work log table. |
-| **Summary** | Authority: [`assessments/capstone.md`](../assessments/capstone.md); ship coherent over feature-bloated. |
+| **Summary** | Authority: [Capstone assessment](/assessments/capstone); ship coherent over feature-bloated. |
 
-**File:** [`lessons/module-07/lesson-01.md`](../lessons/module-07/lesson-01.md)
+**File:** [Module 07 Lesson 01](/lessons/module-07/01)
 
 ---
 
 ## Assessment
 
-- **No separate module quiz.** Summative evidence is the [**capstone**](../assessments/capstone.md) (`assessments/capstone.md`).
+- **No separate module quiz.** Summative evidence is the [capstone](/assessments/capstone).
 
 ## Dependencies
 

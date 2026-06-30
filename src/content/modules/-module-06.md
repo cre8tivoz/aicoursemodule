@@ -1,7 +1,7 @@
 ---
 id: "06"
-title: "AI as build partner: prompting, reviewing, shipping"
-summary: "Using AI tools for code generation, review, and documentation while staying accountable for the output."
+title: "Prompting as design: briefs, constraints, review loops"
+summary: "Turn intent into prompts, acceptance criteria, and honest iteration before you ship the capstone."
 tint: "style06"
-image: "/images/module-06.png"
+image: "/images/module-06.svg"
 ---

@@ -28,7 +28,7 @@ description: ""
 | **Practice** | Sketch a folder tree for a 2-page hobby site (names only). |
 | **Summary** | Structure first; reduces confusion when AI generates multiple files. |
 
-**File:** [`lessons/module-02/lesson-01.md`](../lessons/module-02/lesson-01.md) (Phase 3 — hands-on, ≤800 words)
+**File:** [Module 02 Lesson 01](/lessons/module-02/01) (Phase 3 — hands-on, ≤800 words)
 
 ---
 
@@ -41,7 +41,7 @@ description: ""
 | **Practice** | Checklist: install editor, open folder, create empty `index.html`, save. |
 | **Summary** | Ease of use starts with treating the folder as the single source of truth. |
 
-**File:** [`lessons/module-02/lesson-02.md`](../lessons/module-02/lesson-02.md)
+**File:** [Module 02 Lesson 02](/lessons/module-02/02)
 
 ---
 
@@ -54,7 +54,7 @@ description: ""
 | **Practice** | List three IDE actions that save time vs a basic text editor. |
 | **Summary** | Friction down → more iterations → better learning and output. |
 
-**File:** [`lessons/module-02/lesson-03.md`](../lessons/module-02/lesson-03.md)
+**File:** [Module 02 Lesson 03](/lessons/module-02/03)
 
 ---
 
@@ -67,7 +67,7 @@ description: ""
 | **Practice** | In two sentences, say when you’d want history vs when a single folder backup is enough. |
 | **Summary** | Optional depth; points to CO-02 “organise and iterate.” |
 
-**File:** [`lessons/module-02/lesson-04.md`](../lessons/module-02/lesson-04.md)
+**File:** [Module 02 Lesson 04](/lessons/module-02/04)
 
 ## Dependencies between lessons
 

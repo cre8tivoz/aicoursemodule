@@ -1,7 +1,7 @@
 ---
 id: "03"
-title: "Style systems: token-driven CSS that scales"
-summary: "Custom properties, utility classes, and how to set up a small design system that does not fight you."
+title: "Cloud AI coding assistants"
+summary: "Cursor, Claude, Gemini, and ChatGPT to a point — roles, limits, privacy, and when chat beats the editor."
 tint: "style03"
-image: "/images/module-03.png"
+image: "/images/module-03.svg"
 ---

@@ -91,4 +91,4 @@ In **2–4 sentences**, state which **class** of static hosting you intend for t
 
 **Task 1:** Accessibility intent should mention semantics, keyboard/focus, or Lighthouse-style evidence—not “we care about everyone” alone.
 
-**Alignment:** This module assessment doubles as preparation for the [capstone](capstone.md); do not require capstone **submission** here.
+**Alignment:** This module assessment doubles as preparation for the [capstone](/assessments/capstone); do not require capstone **submission** here.

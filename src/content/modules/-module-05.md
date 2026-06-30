@@ -1,7 +1,7 @@
 ---
 id: "05"
-title: "Images, performance, and accessibility"
-summary: "Responsive images, lazy loading, contrast, and the small details that separate shipped from good."
+title: "Why basic code literacy still matters"
+summary: "Reading HTML/CSS, spotting broken semantics, and optional depth on freeCodeCamp — steer AI, don't guess."
 tint: "style05"
-image: "/images/module-05.png"
+image: "/images/module-05.svg"
 ---
