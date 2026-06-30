@@ -52,6 +52,20 @@ List **at least four** separate **issues or risks** (heading order, semantics, a
 
 **Overall module judgement:** **S** only if **all** rows are **S**. Otherwise **NS**.
 
+## What good looks like (examples)
+
+**Task 1 (extract):**
+
+> AI drafts fast, but I still read the file because the preview hides broken nesting — a missing `</section>` might look fine until I add another block. For accessibility, I check heading order myself; the model often skips from `h1` to `h4`. Better prompts come from knowing what `<main>` is for.
+
+**Task 3 (numbered issues):**
+
+1. `h3` “Latest update” appears before any `h2` — outline skip.  
+2. “Latest update” should probably be `h2` under the `h1`.  
+3. Empty `alt` on `group.jpg` if the photo is informative.  
+4. No `nav` if the club site will grow beyond one page.  
+**Fix:** Change “Latest update” to `<h2>` and add `alt="Members at Tuesday meetup"` if the image conveys information.
+
 ## Exemplar responses (for assessors)
 
 **Task 3:** Core issue: **skipped heading level** (`h1` then `h3` before any `h2`). Other acceptable points: empty `alt` if image is informative (learners may argue decorative—accept if justified); possible missing `nav`/`footer` if strict; “Latest update” might be `h2` after fix. **Decorative alt** alone is **not** automatically wrong—look for **reasoning**.

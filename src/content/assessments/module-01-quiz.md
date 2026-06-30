@@ -40,6 +40,24 @@ List **three distinct situations** where **basic HTML/CSS literacy** still chang
 
 **Overall module judgement:** **S** only if **all** rows are **S** at an acceptable Diploma-level standard. **NS** if any row is **NS**.
 
+## What good looks like (examples)
+
+These are **illustrative** — write in your own words. Do not copy verbatim.
+
+**Task 1 (extract):**
+
+> For a weekend side-business site, AI-assisted work wins on speed for first drafts — I could have three linked pages live by Sunday afternoon. The trade-off is verification time: I would still check heading order, contact details, and workplace AI policy before publish. Hand-coding would teach me more about maintenance but might not finish in one weekend. **Recommendation:** use AI inside the IDE for structure and copy drafts, then read every file before deploy — speed with oversight.
+
+**Task 2:**
+
+> Creative direction is deciding *what* the site must achieve and for whom; mechanical typing is entering tags. Choosing “one `h1` for the business name and contact in the footer on every page” is direction — it is not the same as pasting 200 lines the model returned.
+
+**Task 3 (three situations):**
+
+1. Fixing skipped heading levels before publish.  
+2. Catching a wrong phone number the model invented.  
+3. Writing a tighter prompt because you know what `<nav>` should contain.
+
 ## Exemplar responses (for assessors)
 
 **Task 1 (shape only):** Look for named trade-offs (e.g. speed vs verification time), mention of hallucination or policy, and a reasoned pick—not “AI always wins” or “never use AI” without nuance.

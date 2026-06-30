@@ -61,6 +61,20 @@ Write **6–10 sentences** that:
 
 **Overall module judgement:** **S** only if **all** rows are **S**. Otherwise **NS**.
 
+## What good looks like (examples)
+
+**Task 1 (roles — one row):**
+
+> **Cursor:** Generate and refactor markup directly in `index.html` while the folder is open.
+
+**Task 2 (limitation + mitigation):**
+
+> **Hallucination** — model invents plausible but wrong tags → mitigation: run Module 03 checklist on every save before deploy.
+
+**Task 3 (extract):**
+
+> The snippet uses generic divs instead of landmarks — “Welcome” is a styled div, not an `h1`, so screen reader users miss the page topic. The cake image has no `alt`. The footer says “call us” but is not a link or phone link. **Follow-up prompt:** “Rewrite this body using `header`, `main`, `footer`; make Welcome an `h1`; add descriptive alt to the cake image; make contact a `tel:` link.”
+
 ## Exemplar responses (for assessors)
 
 **Task 3 issues may include:** no `header`/`nav`/`main`/`footer`; “Welcome” not an `h1`; missing `alt` on image; “Contact” not a link; document structure. Accept reasonable alternatives if justified.

@@ -40,6 +40,16 @@ In **6–10 sentences**, **justify** whether you would lean **cloud AI**, **loca
 
 **Overall module judgement:** **S** only if **all** rows are **S**. Otherwise **NS**.
 
+## What good looks like (examples)
+
+**Task 1 (motivation extract):**
+
+> Local models can keep hobby project drafts off public cloud logs — useful when I am experimenting with copy about a real community group. Offline use matters on patchy home internet. After hardware cost, I avoid per-token bills for throwaway practice.
+
+**Task 3 (conclusion extract):**
+
+> I would use **cloud AI in the IDE** for drafting HTML on my mid-range laptop — it is faster than running a large local model that would swap and slow down. I would still verify structure by hand. **Conclusion:** cloud for speed on a personal hobby site; local only if I later work on sensitive drafts.
+
 ## Exemplar responses (for assessors)
 
 **Task 2:** Accept course-named families; penalise only if names are nonsense or purely commercial products with no course link.
