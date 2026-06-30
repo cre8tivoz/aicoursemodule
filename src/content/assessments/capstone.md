@@ -12,6 +12,8 @@ aqfOutcomeRefs:
 
 **Integrated summative task (AQF Level 5)** — **not** a hurdle: completing other modules is not blocked by this submission.
 
+**Before you build:** [Module 06, Lesson 04](/lessons/module-06/04) (brief alignment). **While you build:** [Module 07 walkthrough](/lessons/module-07/01).
+
 ## Your brief
 
 Build a **fully completed static HTML mini-site** of **1–3 pages** (1–3 HTML documents, linked together). **Topic is your choice** — think creatively: a **hobby**, **dream business**, a cause you care about, or a small portfolio teaser. Write in your own words for a **professional adult** audience.
