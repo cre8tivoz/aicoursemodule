@@ -10,12 +10,14 @@ aqfOutcomeRefs:
 
 # Capstone — work-integrated assessment
 
-This is **not** an essay task. You submit **proof of work**: a deployed static site and a short **evidence pack** that shows assessors what to check.
+You built skills across seven modules — the capstone is where you **show them** on the web. This is **not** an essay task. You submit **proof of work**: a deployed static site and a short **evidence pack**.
 
+**Download:** [Evidence pack (PDF)](/downloads/capstone-evidence-pack.pdf) · [Fill online](/downloads/capstone-evidence-pack)  
 **Build guide:** [Module 07 workbook](/lessons/module-07/01)  
-**Pre-flight:** [Module 06, Lesson 04](/lessons/module-06/04) (brief aligned to marking rows)
+**Pre-flight:** [Module 06, Lesson 04](/lessons/module-06/04)  
+**For assessors:** [Assessor rubric](/reference/capstone-assessor-rubric)
 
-Completing other modules is **not** blocked by this submission.
+Completing other modules is **not** blocked by this submission. **Not Satisfactory (NS)** means **not yet** — your provider will guide you on what to fix and resubmit.
 
 ## The work you must ship
 
@@ -31,7 +33,7 @@ Your Module 06 **brief** is part of the submission — it shows creative directi
 
 ## What you submit (evidence pack)
 
-Copy this template into your provider’s submission format. **Fill the tables.** No long essays.
+**[Download the PDF template](/downloads/capstone-evidence-pack.pdf)** or use the [online form](/downloads/capstone-evidence-pack). Copy into your provider’s submission format. **Fill the tables.** No long essays.
 
 ### Part A — Artefact (required)
 
@@ -92,7 +94,7 @@ Assessors judge the **artefact** and **evidence pack**, not prose quality.
 | **Deployment** | URL works; site loads as intended. | URL missing or unreachable. |
 | **Content** | Original, appropriate, on-topic for 1–3 pages. | Missing, copied without attribution, or off-brief. |
 
-**Overall:** **S** only if **all** rows are **S**. **NS** if any mandatory row fails.
+**Overall:** **S** when you demonstrate competence on **all** rows. **NS** means one or more rows are **not yet** at standard — fix the specific gap and resubmit per your provider’s process.
 
 ## What good looks like (filled evidence pack — example)
 

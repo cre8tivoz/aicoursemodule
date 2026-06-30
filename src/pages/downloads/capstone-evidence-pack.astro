@@ -1,0 +1,90 @@
+---
+import Base from "@/layouts/Base.astro";
+
+const pdfUrl = "/downloads/capstone-evidence-pack.pdf";
+---
+
+<Base
+  title="Capstone evidence pack (download)"
+  description="Download or print the capstone evidence pack template — fill as you build your static site."
+>
+  <article class="lesson-sheet evidence-pack-page">
+    <p class="type-label" style="color: var(--color-accent);">Capstone · Work-integrated</p>
+    <h1>Evidence pack</h1>
+    <p>
+      You built skills across seven modules — the capstone is where you <strong>show them</strong>.
+      Fill this pack as you go; submit it with your live URL. No essay required.
+    </p>
+
+    <div class="evidence-pack-actions">
+      <a class="evidence-pack-actions__primary" href={pdfUrl} download>
+        Download PDF
+      </a>
+      <button type="button" class="evidence-pack-actions__secondary" id="print-pack">
+        Print this page
+      </button>
+    </div>
+
+    <p class="evidence-pack-actions__hint">
+      Same template as the <a href="/assessments/capstone">online capstone guide</a>.
+      Assessors: see the <a href="/reference/capstone-assessor-rubric">assessor rubric</a>.
+    </p>
+
+    <section class="evidence-pack-print" id="evidence-pack-form" aria-label="Evidence pack form">
+      <h2>Part A — Artefact</h2>
+      <table class="evidence-pack-table">
+        <tbody>
+          <tr><th scope="row">Live URL</th><td><span class="evidence-pack-field" aria-hidden="true"></span></td></tr>
+          <tr><th scope="row">Lighthouse Accessibility score</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">Date tested</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">Browser / Chrome version</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">Lighthouse mode</th><td><span class="evidence-pack-field evidence-pack-field--short">Mobile / Desktop</span></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Part B — Row evidence</h2>
+      <p>One specific line per row — where can an assessor verify on your live site?</p>
+      <table class="evidence-pack-table">
+        <tbody>
+          <tr><th scope="row">Structure / UX</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">Accessibility</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">Visual design</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">Deployment</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">Content</th><td><span class="evidence-pack-field"></span></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Part C — Brief</h2>
+      <p>Attach your Module 06 one-page brief (Goal, Audience, Pages, Tone, Must-haves, Non-goals, Accessibility intent).</p>
+      <div class="evidence-pack-brief-box" aria-hidden="true"></div>
+
+      <h2>Part D — Work claims</h2>
+      <table class="evidence-pack-table">
+        <tbody>
+          <tr><th scope="row">Hosting</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">Why this host (one line)</th><td><span class="evidence-pack-field"></span></td></tr>
+          <tr><th scope="row">AI used?</th><td><span class="evidence-pack-field evidence-pack-field--short">Yes / No</span></td></tr>
+          <tr><th scope="row">If yes — verified by hand</th><td><span class="evidence-pack-field"></span></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Submission checklist</h2>
+      <ul class="evidence-pack-checklist">
+        <li>Live URL loads in a fresh browser</li>
+        <li>Lighthouse ≥ 90% on deployed URL</li>
+        <li>All Part B rows have specific proof</li>
+        <li>Brief attached (Part C)</li>
+        <li>Part D complete</li>
+      </ul>
+    </section>
+
+    <p style="margin-top: var(--space-xl);">
+      <a href="/lessons/module-07/01">Capstone build workbook</a> ·
+      <a href="/assessments/capstone">Full capstone guide</a>
+    </p>
+  </article>
+
+  <script>
+    document.getElementById("print-pack")?.addEventListener("click", () => window.print());
+  </script>
+</Base>

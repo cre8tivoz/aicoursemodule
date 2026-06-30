@@ -8,12 +8,13 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"node scripts/themeGenerator.js --watch\" \"node scripts/jsonGenerator.js && astro dev\"",
-    "build": "node scripts/themeGenerator.js && node scripts/jsonGenerator.js && astro build && node scripts/llmsGenerator.js",
+    "build": "node scripts/themeGenerator.js && node scripts/jsonGenerator.js && node scripts/generateCapstonePdf.js && astro build && node scripts/llmsGenerator.js",
     "preview": "astro preview",
     "check": "astro check",
     "format": "prettier -w ./src",
     "generate-json": "node scripts/jsonGenerator.js",
     "generate-llms": "node scripts/llmsGenerator.js",
+    "generate-capstone-pdf": "node scripts/generateCapstonePdf.js",
     "remove-darkmode": "node scripts/removeDarkmode.js && pnpm format",
     "deploy:cf-workers": "npm run build && wrangler deploy",
     "preview:cf-workers": "npm run build && wrangler dev"

@@ -14,6 +14,8 @@ export async function getStaticPaths() {
 }
 
 const { loader } = Astro.props;
+const slug = Astro.params.slug ?? "";
+const isCapstone = slug === "capstone";
 const rawModule = await loader();
 const rawContent = typeof rawModule === "string" ? rawModule : (rawModule as any).default ?? String(rawModule);
 const stripped = rawContent
@@ -27,7 +29,7 @@ const pageTitle = titleMatch ? titleMatch[1] : "Assessment";
 ---
 
 <Base title={pageTitle}>
-  <article class="assessment-sheet">
+  <article class:list={["assessment-sheet", { "assessment-sheet--capstone": isCapstone }]}>
     <div set:html={contentHtml} />
   </article>
 </Base>
