@@ -28,7 +28,7 @@ description: ""
 | **Practice** | List two reasons you might prefer local for a **practice** static site. |
 | **Summary** | Fit-for-purpose—not ideology. |
 
-**File:** [`lessons/module-04/lesson-01.md`](../lessons/module-04/lesson-01.md)
+**File:** [Module 04 Lesson 01](/lessons/module-04/01)
 
 ---
 
@@ -42,7 +42,7 @@ description: ""
 | **Summary** | Orientation, not a lab manual—hardware and drivers vary. |
 | **Deep dive** (in lesson) | Browser exploration (**DeepSeek**, **MiniMax 2.5** / current MiniMax web, **Qwen**, Hugging Face); optional **Ollama** / **LM Studio** on-device; safe prompts only; “free” tiers verified at source. |
 
-**File:** [`lessons/module-04/lesson-02.md`](../lessons/module-04/lesson-02.md)
+**File:** [Module 04 Lesson 02](/lessons/module-04/02)
 
 ---
 
@@ -55,7 +55,7 @@ description: ""
 | **Practice** | For “one landing page + contact,” argue **S/NS** whether a huge model is proportionate (short paragraph). |
 | **Summary** | CO-05: justify tool choice for the job. |
 
-**File:** [`lessons/module-04/lesson-03.md`](../lessons/module-04/lesson-03.md)
+**File:** [Module 04 Lesson 03](/lessons/module-04/03)
 
 ---
 
@@ -68,7 +68,7 @@ description: ""
 | **Practice** | List three questions to ask IT before installing local inference at work. |
 | **Summary** | Bridges to capstone (you justify hosting/tooling in plain language). |
 
-**File:** [`lessons/module-04/lesson-04.md`](../lessons/module-04/lesson-04.md)
+**File:** [Module 04 Lesson 04](/lessons/module-04/04)
 
 ## Dependencies between lessons
 

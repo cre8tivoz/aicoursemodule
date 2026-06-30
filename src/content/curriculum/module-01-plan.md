@@ -28,7 +28,7 @@ description: ""
 | **Practice** | In one paragraph, describe a real work or hobby page that could stay static (no logins). |
 | **Summary** | Static = simple to host and fast; you still own quality and accessibility. |
 
-**File:** [`lessons/module-01/lesson-01.md`](../lessons/module-01/lesson-01.md) (Phase 3 content complete).
+**File:** [Module 01 Lesson 01](/lessons/module-01/01) (Phase 3 content complete).
 
 ---
 
@@ -41,7 +41,7 @@ description: ""
 | **Practice** | List three things you would **always** verify before publishing AI-written HTML. |
 | **Summary** | Speed + oversight; you remain accountable for the shipped page. |
 
-**File:** [`lessons/module-01/lesson-02.md`](../lessons/module-01/lesson-02.md)
+**File:** [Module 01 Lesson 02](/lessons/module-01/02)
 
 ---
 
@@ -54,7 +54,7 @@ description: ""
 | **Practice** | Draft a 5-bullet creative brief for a fictional micro-site. |
 | **Summary** | Clear briefs reduce rework and improve AI output quality. |
 
-**File:** [`lessons/module-01/lesson-03.md`](../lessons/module-01/lesson-03.md)
+**File:** [Module 01 Lesson 03](/lessons/module-01/03)
 
 ---
 
@@ -67,7 +67,7 @@ description: ""
 | **Practice** | Choose one path for a stated scenario (e.g. personal portfolio in one weekend) and justify in 6–8 sentences (CO-01). |
 | **Summary** | No single “right” path—fit depends on goal, risk, and time. |
 
-**File:** [`lessons/module-01/lesson-04.md`](../lessons/module-01/lesson-04.md)
+**File:** [Module 01 Lesson 04](/lessons/module-01/04)
 
 ---
 
@@ -80,7 +80,7 @@ description: ""
 | **Practice** | Identify one risk of publishing AI output without reading HTML (e.g. wrong heading level). |
 | **Summary** | Bridges to M02 (workflow) and M05 (literacy). |
 
-**File:** [`lessons/module-01/lesson-05.md`](../lessons/module-01/lesson-05.md)
+**File:** [Module 01 Lesson 05](/lessons/module-01/05)
 
 ## Dependencies between lessons
 

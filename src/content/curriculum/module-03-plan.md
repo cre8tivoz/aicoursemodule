@@ -28,7 +28,7 @@ description: ""
 | **Practice** | Match tool types (Cursor / Claude / Gemini / ChatGPT) to **one** role each for your workflow—your answers may vary. |
 | **Summary** | Tooling is plural; workflow beats any single brand. |
 
-**File:** [`lessons/module-03/lesson-01.md`](../lessons/module-03/lesson-01.md)
+**File:** [Module 03 Lesson 01](/lessons/module-03/01)
 
 ---
 
@@ -41,7 +41,7 @@ description: ""
 | **Practice** | Write four bullet **limitations** (e.g. hallucination, outdated docs, org policy). |
 | **Summary** | “To a point” means verify; never ship unchecked. |
 
-**File:** [`lessons/module-03/lesson-02.md`](../lessons/module-03/lesson-02.md) (IDE extensions + Gemini CLI)
+**File:** [Module 03 Lesson 02](/lessons/module-03/02) (IDE extensions + Gemini CLI)
 
 ---
 
@@ -54,7 +54,7 @@ description: ""
 | **Practice** | One scenario: what would you **not** paste into a cloud chat? |
 | **Summary** | Professional judgement (CO-01/CO-05) applies before clicking Send. |
 
-**File:** [`lessons/module-03/lesson-03.md`](../lessons/module-03/lesson-03.md)
+**File:** [Module 03 Lesson 03](/lessons/module-03/03)
 
 ---
 
@@ -67,7 +67,7 @@ description: ""
 | **Practice** | Run checklist on a short AI-generated snippet (provided in lesson). |
 | **Summary** | Checklists make “evaluate” repeatable, not subjective guesswork. |
 
-**File:** [`lessons/module-03/lesson-04.md`](../lessons/module-03/lesson-04.md)
+**File:** [Module 03 Lesson 04](/lessons/module-03/04)
 
 ---
 
@@ -80,7 +80,7 @@ description: ""
 | **Practice** | Describe your own loop in five steps. |
 | **Summary** | Prepares for M04 (local models) and capstone deployment. |
 
-**File:** [`lessons/module-03/lesson-05.md`](../lessons/module-03/lesson-05.md)
+**File:** [Module 03 Lesson 05](/lessons/module-03/05)
 
 ## Dependencies between lessons
 

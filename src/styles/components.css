@@ -758,6 +758,31 @@ html {
   font-size: var(--type-caption);
 }
 
+.lesson-objectives {
+  margin-top: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border-left: 3px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.lesson-objectives__label {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-accent);
+}
+
+.lesson-objectives__list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--color-text);
+  font-size: var(--type-secondary);
+  line-height: 1.5;
+}
+
+.lesson-objectives__list li + li {
+  margin-top: var(--space-xs);
+}
+
 .lesson-sheet {
   color: var(--color-text);
   padding: clamp(var(--space-xl), 4vw, var(--space-2xl));

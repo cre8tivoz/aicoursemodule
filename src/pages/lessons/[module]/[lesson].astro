@@ -68,6 +68,16 @@ const contentHtml = marked.parse(stripped) as string;
       </li>
     </ol>
     {lesson.data.summary && <p class="lesson-context__meta">{lesson.data.summary}</p>}
+    {lesson.data.objectives.length > 0 && (
+      <div class="lesson-objectives">
+        <p class="lesson-objectives__label type-label">In this lesson</p>
+        <ul class="lesson-objectives__list">
+          {lesson.data.objectives.map((objective) => (
+            <li>{objective}</li>
+          ))}
+        </ul>
+      </div>
+    )}
   </nav>
 
   <article class="lesson-sheet">

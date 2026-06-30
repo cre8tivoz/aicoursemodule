@@ -1,7 +1,7 @@
 ---
 id: "02"
-title: "Structure first: semantic HTML as a design material"
-summary: "Document structure, sectioning, and whyHTML choices are design decisions, not just code."
+title: "IDEs and a sane project workflow"
+summary: "Files, folders, live preview, search/replace, and extensions — reduce friction so you ship pages."
 tint: "style02"
-image: "/images/module-02.png"
+image: "/images/module-02.svg"
 ---

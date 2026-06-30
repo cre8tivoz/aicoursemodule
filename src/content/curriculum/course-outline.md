@@ -34,7 +34,7 @@ Outcomes use Diploma-level verbs: **apply**, **analyse**, **evaluate**, and exer
 | **M04** | Local AI and open-weight models                                   | Emerging **local** options and open models (e.g. **MiniMax**-family, **Qwen**, **DeepSeek**): cost, privacy, hardware, setup at a high level; responsible use.                                                                             | CO-04, CO-05            |
 | **M05** | Why basic code literacy still matters                             | How HTML/CSS/JS structure thinking; reading diffs; spotting broken semantics; using [freeCodeCamp](https://www.freecodecamp.org/) (and similar) for **responsive web design** / basic JS—**supplemental**, not a formal prerequisite gate. | CO-01, CO-03            |
 | **M06** | Prompting as design: briefs, constraints, review loops            | Turning intent into prompts; acceptance criteria; iterating; combining human taste with AI speed; professional tone and honesty about AI use.                                                                                              | CO-04, CO-05            |
-| **M07** | Capstone build: ship your static mini-site                        | Work-integrated capstone: deploy 1–3 pages, Lighthouse on live URL, submit evidence pack (not an essay)—see [`assessments/capstone.md`](/assessments/capstone/).                                                                                 | CO-03, CO-04, CO-05     |
+| **M07** | Capstone build: ship your static mini-site                        | Work-integrated capstone: deploy 1–3 pages, Lighthouse on live URL, submit evidence pack (not an essay)—see [Capstone assessment](/assessments/capstone).                                                                                 | CO-03, CO-04, CO-05     |
 
 
 ## Module learning objectives (2–4 each)
@@ -87,7 +87,7 @@ Outcomes use Diploma-level verbs: **apply**, **analyse**, **evaluate**, and exer
 | CO-05   | M04, M06           | M04 quiz; **capstone** (hosting + work claims in evidence pack Part D).                      |
 
 
-**Capstone** (`[assessments/capstone.md](/assessments/capstone/)`): Work-integrated submission — **live site** plus **evidence pack** (Parts A–D). Summative evidence for **CO-03**, **CO-04**, and **CO-05**. No essay required.
+**Capstone** ([Capstone assessment](/assessments/capstone)): Work-integrated submission — **live site** plus **evidence pack** (Parts A–D). Summative evidence for **CO-03**, **CO-04**, and **CO-05**. No essay required.
 
 ## Pedagogical rules (aligned to global course rules)
 

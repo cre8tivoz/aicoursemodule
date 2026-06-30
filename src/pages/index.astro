@@ -12,8 +12,9 @@ const sortedModules = modules.sort((a, b) => a.data.id.localeCompare(b.data.id))
 
 // Total lesson count for progress
 const totalLessons = lessons.length;
+const totalModules = sortedModules.length;
 const totalAssessments = assessments.length;
-const courseDescription = `AQF Level 5 course covering static-site generation, deployment workflows, and AI-assisted tooling. ${totalLessons} modules with ${totalAssessments} check-in assessments.`;
+const courseDescription = `AQF Level 5 course covering static-site generation, deployment workflows, and AI-assisted tooling. ${totalModules} modules, ${totalLessons} lessons, and ${totalAssessments} assessments including the capstone.`;
 ---
 
 <Base title="AI Essentials for Qualifiers — Course Home">
@@ -37,7 +38,7 @@ const courseDescription = `AQF Level 5 course covering static-site generation, d
             </p>
           )}
         </div>
-        <img src="/images/logo.png" alt="" class="home-desk__hero-logo" />
+        <img src="/images/logo.svg" alt="" class="home-desk__hero-logo" />
       </div>
     </section>
 
@@ -105,7 +106,7 @@ const courseDescription = `AQF Level 5 course covering static-site generation, d
               </ul>
               {modAssessment && (
                 <a href={"/assessments/" + (mod.data.id === "07" ? "capstone" : "module-" + mod.data.id + "-quiz")} class="syllabus-checkin">
-                  <span class="type-label syllabus-checkin__label">Module Check-in</span>
+                  <span class="type-label syllabus-checkin__label">{mod.data.id === "07" ? "Capstone" : "Module Check-in"}</span>
                   <span class="syllabus-checkin__title">{modAssessment.data.title}</span>
                 </a>
               )}
