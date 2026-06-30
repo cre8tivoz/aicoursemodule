@@ -7,7 +7,7 @@ description: "Competency-based marking guide for the work-integrated capstone �
 
 This rubric supports **work-integrated** marking: learners submit a **live site** plus an [evidence pack](/downloads/capstone-evidence-pack). Your job is to **verify competence**, not to find reasons to fail.
 
-**Learner template:** [Capstone assessment](/assessments/capstone/) · [PDF evidence pack](/downloads/capstone-evidence-pack.pdf)
+**Learner template:** [Capstone assessment](/assessments/capstone/) · [PDF evidence pack](/downloads/capstone-evidence-pack.pdf) · [Filled exemplar](/reference/capstone-exemplar)
 
 ## Marking philosophy
 

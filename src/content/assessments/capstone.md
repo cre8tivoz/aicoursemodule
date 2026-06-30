@@ -15,6 +15,7 @@ You built skills across seven modules — the capstone is where you **show them*
 **Download:** [Evidence pack (PDF)](/downloads/capstone-evidence-pack.pdf) · [Fill online](/downloads/capstone-evidence-pack)  
 **Build guide:** [Module 07 workbook](/lessons/module-07/01)  
 **Pre-flight:** [Module 06, Lesson 04](/lessons/module-06/04)  
+**Exemplar:** [Filled evidence pack example](/reference/capstone-exemplar)  
 **For assessors:** [Assessor rubric](/reference/capstone-assessor-rubric)
 
 Completing other modules is **not** blocked by this submission. **Not Satisfactory (NS)** means **not yet** — your provider will guide you on what to fix and resubmit.
@@ -96,36 +97,17 @@ Assessors judge the **artefact** and **evidence pack**, not prose quality.
 
 **Overall:** **S** when you demonstrate competence on **all** rows. **NS** means one or more rows are **not yet** at standard — fix the specific gap and resubmit per your provider’s process.
 
-## What good looks like (filled evidence pack — example)
+## What good looks like
 
-**Part A**
+See the full **[capstone exemplar](/reference/capstone-exemplar)** — a fictional Riverside Community Garden submission with every Part A–D field filled, strong vs vague Part B lines, and the attached brief.
 
-| Field | Example entry |
-| ----- | ------------- |
-| Live URL | `https://riverside-garden-demo.netlify.app` |
-| Lighthouse Accessibility score | 92% |
-| Date tested | 2026-06-28 |
-| Chrome version | 131.0.6778.85 |
-| Lighthouse mode | Mobile |
-
-**Part B (extract)**
+**Quick taste — one Part B row done well:**
 
 | Row | Example proof line |
 | --- | ------------------ |
-| Structure / UX | `/` and `/about.html` — nav in `<nav>`, one `h1` each, contact in footer |
-| Accessibility | 92% Lighthouse mobile; Tab reaches all nav links with visible focus |
-| Deployment | Netlify drag-and-drop; redeployed after contrast fix on 2026-06-27 |
+| Structure / UX | `/` and `/seasons.html` — `<nav>` links both ways; one `<h1>` per page; contact email in footer |
 
-**Part D**
-
-| Field | Example |
-| ----- | ------- |
-| Hosting | Netlify |
-| Why this host | Free tier, HTTPS, no backend needed |
-| AI used? | Yes |
-| Verified by hand | Structure, alt text, contrast, all links on live URL |
-
-Your site topic and scores will differ — match the **specificity**, not the topic.
+Your topic and scores will differ. Match the **specificity** (paths, elements, colours, dates) — not the garden theme.
 
 ## Mapping
 
