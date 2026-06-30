@@ -42,6 +42,31 @@ In **5–8 sentences**, explain how using an **integrated** editor (with preview
 
 **Overall module judgement:** **S** only if **all** rows are **S**. Otherwise **NS**.
 
+## What good looks like (examples)
+
+**Task 1 (tree):**
+
+```text
+hobby-site/
+  index.html
+  styles.css
+  images/logo.png
+```
+
+> Separate CSS keeps presentation in one file I can skim when AI adds rules — I do not hunt through every `<style>` block in HTML.
+
+**Task 2 (checklist extract):**
+
+1. Open project folder as workspace.  
+2. Edit `index.html` and `styles.css` side by side.  
+3. Live preview after each heading change.  
+4. Find all `class="btn"` across files.  
+5. Format document before commit/save.
+
+**Task 3 (extract):**
+
+> In Notepad I only see one file at a time — I forget whether `about.html` still links to the old CSS path. In VS Code I open the folder, click between files, and preview in two keystrokes. Step 3 on my checklist (live preview) means I catch broken nav before I upload.
+
 ## Exemplar responses (for assessors)
 
 **Task 1:** Accept minor naming variants (`css/style.css`) if consistent and explained.

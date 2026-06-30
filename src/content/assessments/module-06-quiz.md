@@ -61,6 +61,30 @@ In **2–4 sentences**, state which **class** of static hosting you intend for t
 
 **Overall module judgement:** **S** only if **all** rows are **S**. Otherwise **NS**.
 
+## What good looks like (examples)
+
+**Task 2 (criteria extract — count toward four):**
+
+1. Valid HTML5; `index.html` + `styles.css` only — no frameworks.  
+2. Exactly one `<h1>` on the home page matching the brief title.  
+3. All images have meaningful `alt` or `alt=""` if decorative.  
+4. Nav links work with relative paths; focus visible on links.  
+5. Mobile layout: contact block readable without horizontal scroll.
+
+**Task 3 (loop extract):**
+
+1. Paste brief section into IDE chat.  
+2. Generate **only** `index.html` header + nav.  
+3. Save; open in browser.  
+4. Check one `h1` and landmark tags.  
+5. Tab through links — focus visible?  
+6. Fix contrast on links if needed.  
+7. Re-run checklist before next section prompt.
+
+**Task 5:**
+
+> I plan to use **Netlify** drag-and-drop — free tier, HTTPS by default, fits static files only, no server to maintain for a two-page hobby site.
+
 ## Exemplar responses (for assessors)
 
 **Task 2:** Count words excluding the task heading; accept slightly shorter if criteria density is high—use holistic judgement at AQF 5.
