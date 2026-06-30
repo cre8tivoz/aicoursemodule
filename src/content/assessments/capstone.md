@@ -8,48 +8,123 @@ aqfOutcomeRefs:
   - "CO-05"
 ---
 
-# Capstone (final assessment)
+# Capstone — work-integrated assessment
 
-**Integrated summative task (AQF Level 5)** — **not** a hurdle: completing other modules is not blocked by this submission.
+This is **not** an essay task. You submit **proof of work**: a deployed static site and a short **evidence pack** that shows assessors what to check.
 
-**Before you build:** [Module 06, Lesson 04](/lessons/module-06/04) (brief alignment). **While you build:** [Module 07 walkthrough](/lessons/module-07/01).
+**Build guide:** [Module 07 workbook](/lessons/module-07/01)  
+**Pre-flight:** [Module 06, Lesson 04](/lessons/module-06/04) (brief aligned to marking rows)
 
-## Your brief
+Completing other modules is **not** blocked by this submission.
 
-Build a **fully completed static HTML mini-site** of **1–3 pages** (1–3 HTML documents, linked together). **Topic is your choice** — think creatively: a **hobby**, **dream business**, a cause you care about, or a small portfolio teaser. Write in your own words for a **professional adult** audience.
+## The work you must ship
 
-## What you must deliver
+Build and deploy a **static HTML mini-site**:
 
-1. **Artefact**: Hand-authored **HTML** and **CSS** (no framework required). The course uses Eleventy for *these* materials; your capstone does **not** have to use Eleventy.
-2. **UX/UI and structure**: Clear purpose per page; sensible heading hierarchy; consistent navigation; readable typography and spacing; obvious targets for any buttons or links.
-3. **Accessibility**:
-   - Semantic HTML (e.g. `header`, `nav`, `main`, `footer` where appropriate; logical `h1`–`h3` order).
-   - Keyboard-usable navigation; **visible focus** on interactive elements.
-   - Text/background **colour contrast** sufficient for reading.
-   - **Evidence**: Run **Lighthouse** (Chrome DevTools → Lighthouse) on your **deployed** site. **Accessibility score must be ≥ 90%** (report the score in your submission). Lighthouse supports assessment but is not a legal compliance certificate — assessors may also check keyboard use and heading order manually.
-4. **Colour scheme**: Intentional, limited palette; professional look. (The **course** site uses the Canadian palette; **your** capstone may use **any coherent palette** that meets contrast expectations.)
-5. **Deployment**: Publish the site publicly and submit a **live URL**, using one of:
-   - **Netlify** or **Vercel** (or similar static hosting), **or**
-   - **Your own web server** (HTTPS preferred).
+- **1–3 linked HTML pages** on a topic you choose (hobby, side business, cause, portfolio teaser).
+- **Hand-authored HTML and CSS** — no framework required.
+- **Semantic structure**, keyboard-usable navigation, readable contrast.
+- **Live public URL** (Netlify, Vercel, similar static host, or your own server with HTTPS preferred).
+- **Lighthouse Accessibility ≥ 90%** on the **deployed** URL (not `file://` only).
+
+Your Module 06 **brief** is part of the submission — it shows creative direction (CO-04). The **live site** is the main artefact.
+
+## What you submit (evidence pack)
+
+Copy this template into your provider’s submission format. **Fill the tables.** No long essays.
+
+### Part A — Artefact (required)
+
+| Field | Your entry |
+| ----- | ---------- |
+| **Live URL** | |
+| **Lighthouse Accessibility score** | e.g. 94% |
+| **Date tested** | |
+| **Chrome version** (or browser used) | |
+| **Lighthouse mode** | Mobile / Desktop |
+
+Attach a **screenshot** of the Lighthouse result if your provider requires it.
+
+### Part B — Row evidence (required)
+
+One line per row — point assessors to **proof on the live site** (page path, element, or screenshot filename).
+
+| Marking row | Where assessors can verify (be specific) |
+| ----------- | ---------------------------------------- |
+| **Structure / UX** | e.g. “Home `/` — nav links to About and Contact; one `h1` per page” |
+| **Accessibility** | e.g. “Lighthouse 94% on URL above; Tab order: logo → nav → main → footer” |
+| **Visual design** | e.g. “`styles.css` — navy `#1a2a4a` text on `#f5f5f0` background; accent on buttons” |
+| **Deployment** | e.g. “Netlify — URL loads without login; tested 2026-06-30” |
+| **Content** | e.g. “Original copy about [topic]; photos mine / credited in footer” |
+
+### Part C — Brief (required)
+
+Attach or paste your **Module 06 one-page brief** (Goal, Audience, Pages, Tone, Must-haves, Non-goals, Accessibility intent).
+
+### Part D — Work claims (required — short fields only)
+
+| Field | Your entry |
+| ----- | ---------- |
+| **Hosting** | e.g. Netlify / Vercel / own server |
+| **Why this host** (one line) | e.g. “Free tier, HTTPS, fits static files” |
+| **AI used?** | Yes / No |
+| **If yes — what you verified by hand** (one line) | e.g. “Cursor drafted CSS; I fixed heading order and alt text” |
+
+If your provider asks for a cover note, **≤100 words** pointing to the URL and evidence pack — not a reflective essay.
 
 ## Submission checklist
 
-- [ ] Live **URL** (required).
-- [ ] **Lighthouse Accessibility** score ≥ 90% (screenshot or written score + date/tool version).
-- [ ] Optional: link to **source** (repository or zip) if your provider requires offline evidence.
+- [ ] Part A — live URL loads; Lighthouse ≥ 90% recorded
+- [ ] Part B — all five rows have specific proof lines
+- [ ] Part C — brief attached
+- [ ] Part D — hosting + AI fields complete
+- [ ] Optional: source link (repo or zip)
 
 ## Marking guide (S / NS)
+
+Assessors judge the **artefact** and **evidence pack**, not prose quality.
 
 | Area | Satisfactory (S) | Not Satisfactory (NS) |
 | ---- | ---------------- | --------------------- |
 | **Structure / UX** | Clear purpose, navigation, hierarchy, readable layout on mobile and desktop. | Confusing structure, broken links, or unreadable layout. |
-| **Accessibility** | Semantic HTML, keyboard/focus, contrast; Lighthouse Accessibility **≥ 90%** on deployed site; manual checks show no major barriers. | Fails Lighthouse threshold or major a11y barriers (e.g. no focus, wrong heading order). |
-| **Visual design** | Coherent colour scheme; intentional use of accent vs neutral. | Random colours or unreadable contrast. |
-| **Deployment** | URL works; site loads as intended. | URL missing or site not reachable. |
-| **Content** | Original, appropriate, on-topic content for 1–3 pages. | Missing, copied without attribution, or off-brief. |
+| **Accessibility** | Semantic HTML, keyboard/focus, contrast; Lighthouse **≥ 90%** on deployed URL; no major manual barriers. | Below threshold or major barriers (no focus, wrong heading order). |
+| **Visual design** | Coherent palette; intentional accent vs neutral. | Random colours or unreadable contrast. |
+| **Deployment** | URL works; site loads as intended. | URL missing or unreachable. |
+| **Content** | Original, appropriate, on-topic for 1–3 pages. | Missing, copied without attribution, or off-brief. |
 
-**Overall**: **S** only if **all** rows meet **S** at an acceptable Diploma-level standard. **NS** if any mandatory row is not met. (Resubmission policy is set by your provider — not a formal “hurdle” in course design.)
+**Overall:** **S** only if **all** rows are **S**. **NS** if any mandatory row fails.
+
+## What good looks like (filled evidence pack — example)
+
+**Part A**
+
+| Field | Example entry |
+| ----- | ------------- |
+| Live URL | `https://riverside-garden-demo.netlify.app` |
+| Lighthouse Accessibility score | 92% |
+| Date tested | 2026-06-28 |
+| Chrome version | 131.0.6778.85 |
+| Lighthouse mode | Mobile |
+
+**Part B (extract)**
+
+| Row | Example proof line |
+| --- | ------------------ |
+| Structure / UX | `/` and `/about.html` — nav in `<nav>`, one `h1` each, contact in footer |
+| Accessibility | 92% Lighthouse mobile; Tab reaches all nav links with visible focus |
+| Deployment | Netlify drag-and-drop; redeployed after contrast fix on 2026-06-27 |
+
+**Part D**
+
+| Field | Example |
+| ----- | ------- |
+| Hosting | Netlify |
+| Why this host | Free tier, HTTPS, no backend needed |
+| AI used? | Yes |
+| Verified by hand | Structure, alt text, contrast, all links on live URL |
+
+Your site topic and scores will differ — match the **specificity**, not the topic.
 
 ## Mapping
 
-Ensure the [course outline](/curriculum/course-outline/) lists this capstone as **summative evidence** for at least one **course outcome**.
+Summative evidence for **CO-03** (evaluate structure/accessibility), **CO-04** (brief + creative direction), and **CO-05** (hosting choice). See [course outline](/curriculum/course-outline/).

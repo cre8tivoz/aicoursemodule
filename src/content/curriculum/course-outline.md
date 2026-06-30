@@ -34,7 +34,7 @@ Outcomes use Diploma-level verbs: **apply**, **analyse**, **evaluate**, and exer
 | **M04** | Local AI and open-weight models                                   | Emerging **local** options and open models (e.g. **MiniMax**-family, **Qwen**, **DeepSeek**): cost, privacy, hardware, setup at a high level; responsible use.                                                                             | CO-04, CO-05            |
 | **M05** | Why basic code literacy still matters                             | How HTML/CSS/JS structure thinking; reading diffs; spotting broken semantics; using [freeCodeCamp](https://www.freecodecamp.org/) (and similar) for **responsive web design** / basic JS—**supplemental**, not a formal prerequisite gate. | CO-01, CO-03            |
 | **M06** | Prompting as design: briefs, constraints, review loops            | Turning intent into prompts; acceptance criteria; iterating; combining human taste with AI speed; professional tone and honesty about AI use.                                                                                              | CO-04, CO-05            |
-| **M07** | Capstone build: ship your static mini-site                        | Guided lesson: staged brief-to-deploy workflow, Lighthouse on live URL, submission mindset—pairs with `[assessments/capstone.md](/assessments/capstone/)`.                                                                                 | CO-03, CO-04, CO-05     |
+| **M07** | Capstone build: ship your static mini-site                        | Work-integrated capstone: deploy 1–3 pages, Lighthouse on live URL, submit evidence pack (not an essay)—see [`assessments/capstone.md`](/assessments/capstone/).                                                                                 | CO-03, CO-04, CO-05     |
 
 
 ## Module learning objectives (2–4 each)
@@ -84,10 +84,10 @@ Outcomes use Diploma-level verbs: **apply**, **analyse**, **evaluate**, and exer
 | CO-02   | M02                | M02 quiz (workflow checklist; practical mini-task description).                                       |
 | CO-03   | M03, M05           | M03 quiz (review checklist); M05 quiz (interpret snippet / find issue).                               |
 | CO-04   | M01, M03, M04, M06 | M03–M04 quizzes; M06 prompt-and-review task; **capstone** (integrated).                               |
-| CO-05   | M04, M06           | M04 quiz; **capstone** (justify hosting/tooling in 1–2 sentences in submission).                      |
+| CO-05   | M04, M06           | M04 quiz; **capstone** (hosting + work claims in evidence pack Part D).                      |
 
 
-**Capstone** (`[assessments/capstone.md](/assessments/capstone/)`): Learners deploy a **1–3 page** static HTML mini-site (topic of choice). Summative evidence primarily supports **CO-03**, **CO-04**, and **CO-05** (structure, accessibility, intentional design, live deployment). Mapped explicitly as summative for **≥1** outcome—here **CO-04** and **CO-03** at minimum.
+**Capstone** (`[assessments/capstone.md](/assessments/capstone/)`): Work-integrated submission — **live site** plus **evidence pack** (Parts A–D). Summative evidence for **CO-03**, **CO-04**, and **CO-05**. No essay required.
 
 ## Pedagogical rules (aligned to global course rules)
 
