@@ -2,7 +2,10 @@
 title: "Capstone — static HTML mini-site"
 module: "07"
 type: capstone
-aqfOutcomeRefs: []
+aqfOutcomeRefs:
+  - "CO-03"
+  - "CO-04"
+  - "CO-05"
 ---
 
 # Capstone (final assessment)
